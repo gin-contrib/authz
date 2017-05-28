@@ -1,4 +1,4 @@
-Gin-authz [![GoDoc](https://godoc.org/github.com/casbin/gin-authz?status.svg)](https://godoc.org/github.com/casbin/gin-authz)
+Gin-authz [![Build Status](https://travis-ci.org/casbin/gin-authz.svg?branch=master)](https://travis-ci.org/casbin/gin-authz) [![Coverage Status](https://coveralls.io/repos/github/casbin/gin-authz/badge.svg?branch=master)](https://coveralls.io/github/casbin/gin-authz?branch=master) [![GoDoc](https://godoc.org/github.com/casbin/gin-authz?status.svg)](https://godoc.org/github.com/casbin/gin-authz)
 ======
 
 Gin-authz is an authorization middleware for [Gin](https://github.com/gin-gonic/gin), it's based on [https://github.com/casbin/casbin](https://github.com/casbin/casbin).
