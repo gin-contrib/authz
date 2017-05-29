@@ -1,11 +1,11 @@
-Gin-authz [![Build Status](https://travis-ci.org/casbin/gin-authz.svg?branch=master)](https://travis-ci.org/casbin/gin-authz) [![Coverage Status](https://coveralls.io/repos/github/casbin/gin-authz/badge.svg?branch=master)](https://coveralls.io/github/casbin/gin-authz?branch=master) [![GoDoc](https://godoc.org/github.com/casbin/gin-authz?status.svg)](https://godoc.org/github.com/casbin/gin-authz)
+Authz [![Build Status](https://travis-ci.org/gin-contrib/authz.svg?branch=master)](https://travis-ci.org/gin-contrib/authz) [![Coverage Status](https://coveralls.io/repos/github/gin-contrib/authz/badge.svg?branch=master)](https://coveralls.io/github/gin-contrib/authz?branch=master) [![GoDoc](https://godoc.org/github.com/gin-contrib/authz?status.svg)](https://godoc.org/github.com/gin-contrib/authz)
 ======
 
-Gin-authz is an authorization middleware for [Gin](https://github.com/gin-gonic/gin), it's based on [https://github.com/casbin/casbin](https://github.com/casbin/casbin).
+Authz is an authorization middleware for [Gin](https://github.com/gin-gonic/gin), it's based on [https://github.com/casbin/casbin](https://github.com/casbin/casbin).
 
 ## Installation
 
-    go get github.com/casbin/gin-authz
+    go get github.com/gin-contrib/authz
 
 ## Simple Example
 
@@ -16,7 +16,7 @@ import (
 	"net/http"
 
 	"github.com/casbin/casbin"
-	"github.com/casbin/gin-authz"
+	"github.com/gin-contrib/authz"
 	"github.com/gin-gonic/gin"
 )
 
