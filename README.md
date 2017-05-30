@@ -1,11 +1,18 @@
-Authz [![Build Status](https://travis-ci.org/gin-contrib/authz.svg?branch=master)](https://travis-ci.org/gin-contrib/authz) [![Coverage Status](https://coveralls.io/repos/github/gin-contrib/authz/badge.svg?branch=master)](https://coveralls.io/github/gin-contrib/authz?branch=master) [![GoDoc](https://godoc.org/github.com/gin-contrib/authz?status.svg)](https://godoc.org/github.com/gin-contrib/authz)
-======
+# Authz 
+
+[![Build Status](https://travis-ci.org/gin-contrib/authz.svg)](https://travis-ci.org/gin-contrib/authz)
+[![codecov](https://codecov.io/gh/gin-contrib/authz/branch/master/graph/badge.svg)](https://codecov.io/gh/gin-contrib/authz)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gin-contrib/authz)](https://goreportcard.com/report/github.com/gin-contrib/authz)
+[![GoDoc](https://godoc.org/github.com/gin-contrib/authz?status.svg)](https://godoc.org/github.com/gin-contrib/authz)
+[![Join the chat at https://gitter.im/gin-gonic/gin](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gin-gonic/gin)
 
 Authz is an authorization middleware for [Gin](https://github.com/gin-gonic/gin), it's based on [https://github.com/casbin/casbin](https://github.com/casbin/casbin).
 
 ## Installation
 
-    go get github.com/gin-contrib/authz
+```
+go get github.com/gin-contrib/authz
+```
 
 ## Simple Example
 
