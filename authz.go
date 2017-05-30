@@ -45,6 +45,6 @@ func (a *BasicAuthorizer) CheckPermission(r *http.Request) bool {
 
 // RequirePermission returns the 403 Forbidden to the client
 func (a *BasicAuthorizer) RequirePermission(w http.ResponseWriter) {
-		w.WriteHeader(403)
+	w.WriteHeader(403)
 	w.Write([]byte("403 Forbidden\n"))
 }
