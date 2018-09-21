@@ -17,7 +17,8 @@ func NewAuthorizer(e *casbin.Enforcer) gin.HandlerFunc {
 		a := &BasicAuthorizer{enforcer: e}
 
 		if !a.CheckPermission(c.Request) {
-			a.RequirePermission(c.Writer)
+			a.RequirePermission(c)
+			return
 		}
 	}
 }
@@ -44,7 +45,7 @@ func (a *BasicAuthorizer) CheckPermission(r *http.Request) bool {
 }
 
 // RequirePermission returns the 403 Forbidden to the client
-func (a *BasicAuthorizer) RequirePermission(w http.ResponseWriter) {
-	w.WriteHeader(403)
-	w.Write([]byte("403 Forbidden\n"))
+func (a *BasicAuthorizer) RequirePermission(c *gin.Context) {
+	c.AbortWithStatus(403)
+	return
 }
