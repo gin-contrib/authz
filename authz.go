@@ -6,14 +6,22 @@ package authz
 
 import (
 	"net/http"
+	"strings"
 
 	"github.com/casbin/casbin"
 	"github.com/gin-gonic/gin"
 )
 
+var customUsername *string
+
 // NewAuthorizer returns the authorizer, uses a Casbin enforcer as input
-func NewAuthorizer(e *casbin.Enforcer) gin.HandlerFunc {
+func NewAuthorizer(e *casbin.Enforcer, username ...string) gin.HandlerFunc {
 	a := &BasicAuthorizer{enforcer: e}
+
+	if username != nil {
+		arg := strings.Join(username, "")
+		customUsername = &arg
+	}
 
 	return func(c *gin.Context) {
 		if !a.CheckPermission(c.Request) {
@@ -30,8 +38,12 @@ type BasicAuthorizer struct {
 // GetUserName gets the user name from the request.
 // Currently, only HTTP basic authentication is supported
 func (a *BasicAuthorizer) GetUserName(r *http.Request) string {
+	if customUsername != nil {
+		return *customUsername
+	}
 	username, _, _ := r.BasicAuth()
 	return username
+
 }
 
 // CheckPermission checks the user/method/path combination from the request.
