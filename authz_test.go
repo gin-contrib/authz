@@ -9,7 +9,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/casbin/casbin"
+	"github.com/casbin/casbin/v2"
 	"github.com/gin-gonic/gin"
 )
 
