@@ -40,7 +40,13 @@ func (a *BasicAuthorizer) CheckPermission(r *http.Request) bool {
 	user := a.GetUserName(r)
 	method := r.Method
 	path := r.URL.Path
-	return a.enforcer.Enforce(user, path, method)
+
+	allowed, err := a.enforcer.Enforce(user, path, method)
+	if err != nil {
+		panic(err)
+	}
+
+	return allowed
 }
 
 // RequirePermission returns the 403 Forbidden to the client
