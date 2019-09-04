@@ -1,4 +1,4 @@
-# Authz 
+# Authz
 
 [![Build Status](https://travis-ci.org/gin-contrib/authz.svg)](https://travis-ci.org/gin-contrib/authz)
 [![codecov](https://codecov.io/gh/gin-contrib/authz/branch/master/graph/badge.svg)](https://codecov.io/gh/gin-contrib/authz)
@@ -10,7 +10,7 @@ Authz is an authorization middleware for [Gin](https://github.com/gin-gonic/gin)
 
 ## Installation
 
-```
+```bash
 go get github.com/gin-contrib/authz
 ```
 
@@ -45,7 +45,6 @@ The authorization determines a request based on ``{subject, object, action}``, w
 1. ``subject``: the logged-on user name
 2. ``object``: the URL path for the web resource like "dataset1/item1"
 3. ``action``: HTTP method like GET, POST, PUT, DELETE, or the high-level actions you defined like "read-file", "write-blog"
-
 
 For how to write authorization policy and other details, please refer to [the Casbin's documentation](https://github.com/casbin/casbin).
 
