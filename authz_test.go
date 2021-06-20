@@ -78,7 +78,10 @@ func TestRBAC(t *testing.T) {
 	testAuthzRequest(t, router, "cathy", "/dataset2/item", "DELETE", 403)
 
 	// delete all roles on user cathy, so cathy cannot access any resources now.
-	e.DeleteRolesForUser("cathy")
+	_, err := e.DeleteRolesForUser("cathy")
+	if err != nil {
+		t.Errorf("got error %v", err)
+	}
 
 	testAuthzRequest(t, router, "cathy", "/dataset1/item", "GET", 403)
 	testAuthzRequest(t, router, "cathy", "/dataset1/item", "POST", 403)
