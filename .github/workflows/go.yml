@@ -28,13 +28,12 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-latest]
         go: [1.13, 1.14, 1.15, 1.16, 1.17]
-        test-tags: ['', nomsgpack]
         include:
           - os: ubuntu-latest
             go-build: ~/.cache/go-build
           - os: macos-latest
             go-build: ~/Library/Caches/go-build
-    name: ${{ matrix.os }} @ Go ${{ matrix.go }} ${{ matrix.test-tags }}
+    name: ${{ matrix.os }} @ Go ${{ matrix.go }}
     runs-on: ${{ matrix.os }}
     env:
       GO111MODULE: on
