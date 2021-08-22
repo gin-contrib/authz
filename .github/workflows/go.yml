@@ -37,7 +37,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     env:
       GO111MODULE: on
-      TESTTAGS: ${{ matrix.test-tags }}
       GOPROXY: https://proxy.golang.org
     steps:
       - name: Set up Go ${{ matrix.go }}
@@ -65,4 +64,4 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
         with:
-          flags: ${{ matrix.os }},go-${{ matrix.go }},${{ matrix.test-tags }}
+          flags: ${{ matrix.os }},go-${{ matrix.go }}
