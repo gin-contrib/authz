@@ -23,7 +23,7 @@ package main
 import (
   "net/http"
 
-  "github.com/casbin/casbin"
+  "github.com/casbin/casbin/v2"
   "github.com/gin-contrib/authz"
   "github.com/gin-gonic/gin"
 )
