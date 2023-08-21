@@ -3,7 +3,7 @@ module github.com/gin-contrib/authz
 go 1.20
 
 require (
-	github.com/casbin/casbin/v2 v2.73.1
+	github.com/casbin/casbin/v2 v2.75.1
 	github.com/gin-gonic/gin v1.9.1
 )
 
