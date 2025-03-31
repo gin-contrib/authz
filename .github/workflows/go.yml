@@ -23,10 +23,9 @@ jobs:
           go-version-file: go.mod
           check-latest: true
       - name: Setup golangci-lint
-        uses: golangci/golangci-lint-action@v6
+        uses: golangci/golangci-lint-action@v7
         with:
-          version: latest
-          args: --verbose
+          version: v2.0
   test:
     strategy:
       matrix:
