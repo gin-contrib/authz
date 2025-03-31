@@ -2,8 +2,10 @@ module github.com/gin-contrib/authz
 
 go 1.21.0
 
+toolchain go1.24.1
+
 require (
-	github.com/casbin/casbin/v2 v2.103.0
+	github.com/casbin/casbin/v2 v2.104.0
 	github.com/gin-gonic/gin v1.10.0
 )
 
