@@ -5,8 +5,8 @@ github.com/bytedance/sonic v1.14.0 h1:/OfKt8HFw0kh2rj8N0F6C/qPGRESq0BbaNZgcNXXzQ
 github.com/bytedance/sonic v1.14.0/go.mod h1:WoEbx8WTcFJfzCe0hbmyTGrfjt8PzNEBdxlNUO24NhA=
 github.com/bytedance/sonic/loader v0.3.0 h1:dskwH8edlzNMctoruo8FPTJDF3vLtDT0sXZwvZJyqeA=
 github.com/bytedance/sonic/loader v0.3.0/go.mod h1:N8A3vUdtUebEY2/VQC0MyhYeKUFosQU6FxH2JmUe6VI=
-github.com/casbin/casbin/v2 v2.115.0 h1:56azKfn1tkb/+y6DAasXs5fsz80CpeXJ1yzshuZbzoc=
-github.com/casbin/casbin/v2 v2.115.0/go.mod h1:Ee33aqGrmES+GNL17L0h9X28wXuo829wnNUnS0edAco=
+github.com/casbin/casbin/v2 v2.120.0 h1:Mo9R/EKZk9aoagFs0OmuCmBYjWJfvbWJiX4aenIJOKY=
+github.com/casbin/casbin/v2 v2.120.0/go.mod h1:Ee33aqGrmES+GNL17L0h9X28wXuo829wnNUnS0edAco=
 github.com/casbin/govaluate v1.3.0/go.mod h1:G/UnbIjZk/0uMNaLwZZmFQrR72tYRZWQkO70si/iR7A=
 github.com/casbin/govaluate v1.9.0 h1:XB53bSw+gaQ7tjTlFJsuTThPCQBxyUeQZ3drsKiicEY=
 github.com/casbin/govaluate v1.9.0/go.mod h1:G/UnbIjZk/0uMNaLwZZmFQrR72tYRZWQkO70si/iR7A=
