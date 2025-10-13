@@ -38,16 +38,15 @@ jobs:
         with:
           scan-type: "fs"
           ignore-unfixed: true
-          format: "sarif"
-          output: "trivy-results.sarif"
+          format: "table"
           exit-code: "1"
-          severity: "CRITICAL,HIGH"
+          severity: "CRITICAL,HIGH,MEDIUM"
 
   test:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest]
-        go: [1.23, 1.24, 1.25]
+        go: [1.24, 1.25]
         include:
           - os: ubuntu-latest
             go-build: ~/.cache/go-build
