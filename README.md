@@ -2,6 +2,7 @@
 
 [![CodeQL](https://github.com/gin-contrib/authz/actions/workflows/codeql.yml/badge.svg)](https://github.com/gin-contrib/authz/actions/workflows/codeql.yml)
 [![Run Tests](https://github.com/gin-contrib/authz/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/gin-contrib/authz/actions/workflows/go.yml)
+[![Trivy Security Scan](https://github.com/gin-contrib/authz/actions/workflows/trivy.yml/badge.svg)](https://github.com/gin-contrib/authz/actions/workflows/trivy.yml)
 [![codecov](https://codecov.io/gh/gin-contrib/authz/branch/master/graph/badge.svg)](https://codecov.io/gh/gin-contrib/authz)
 [![Go Report Card](https://goreportcard.com/badge/github.com/gin-contrib/authz)](https://goreportcard.com/report/github.com/gin-contrib/authz)
 [![GoDoc](https://godoc.org/github.com/gin-contrib/authz?status.svg)](https://godoc.org/github.com/gin-contrib/authz)

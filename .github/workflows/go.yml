@@ -26,21 +26,6 @@ jobs:
         uses: golangci/golangci-lint-action@v8
         with:
           version: v2.1
-  vulnerability-scanning:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
-
-      - name: Run Trivy vulnerability scanner in repo mode
-        uses: aquasecurity/trivy-action@0.33.1
-        with:
-          scan-type: "fs"
-          ignore-unfixed: true
-          format: "table"
-          exit-code: "1"
-          severity: "CRITICAL,HIGH,MEDIUM"
 
   test:
     strategy:
