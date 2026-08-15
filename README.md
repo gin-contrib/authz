@@ -4,7 +4,7 @@
 [![Run Tests](https://github.com/gin-contrib/authz/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/gin-contrib/authz/actions/workflows/go.yml)
 [![Trivy Security Scan](https://github.com/gin-contrib/authz/actions/workflows/trivy-scan.yml/badge.svg)](https://github.com/gin-contrib/authz/actions/workflows/trivy-scan.yml)
 [![codecov](https://codecov.io/gh/gin-contrib/authz/branch/master/graph/badge.svg)](https://codecov.io/gh/gin-contrib/authz)
-[![GoDoc](https://godoc.org/github.com/gin-contrib/authz?status.svg)](https://godoc.org/github.com/gin-contrib/authz)
+[![Go Reference](https://pkg.go.dev/badge/github.com/gin-contrib/authz.svg)](https://pkg.go.dev/github.com/gin-contrib/authz)
 
 Authz is an authorization middleware for [Gin](https://github.com/gin-gonic/gin), it's based on [https://github.com/casbin/casbin](https://github.com/casbin/casbin).
 
