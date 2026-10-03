@@ -14,7 +14,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func testAuthzRequest(t *testing.T, router *gin.Engine, user string, path string, method string, code int) {
+func testAuthzRequest(t *testing.T, router *gin.Engine, user, path, method string, code int) {
 	r, _ := http.NewRequestWithContext(context.Background(), method, path, nil)
 	r.SetBasicAuth(user, "123")
 	w := httptest.NewRecorder()
