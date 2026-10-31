@@ -11,7 +11,7 @@ fmt:
 
 ## test: run tests
 test:
-	$(GO) test -v -cover -coverprofile=coverage.txt ./... && echo "\n==>\033[32m Ok\033[m\n" || exit 1
+	$(GO) test -v -covermode=atomic -coverprofile=coverage.txt ./... && echo "\n==>\033[32m Ok\033[m\n" || exit 1
 
 ## coverage: view test coverage in browser
 coverage: test
